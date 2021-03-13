@@ -1,41 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>test</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="two-sections">
-        <div>
-            <div id="status-bar">
-                <i class="fas fa-arrow-left"></i><i class="fas fa-search"></i>
-            </div>
-            <div class="profile">
-                <img src="img/rose.jpg"/>
-<span class="profile__title">ROSÉ, Blackpink</span>
-<span class="profile__subtitle">R&B, Hip-Hop</span>
-            </div>
-            
-<div class="buttons">
-    <div class="buttons__shuffle"> Shuffle
-    </div>
-    <div class="buttons__like">
-        <i class="fas fa-heart"></i> <span>50m</span>
-    </div>
-</div>
+      <div>
+        <div id="status-bar">
+          <i class="fas fa-arrow-left"></i><i class="fas fa-search"></i>
+        </div>
+        <div class="profile">
+          <img src="img/rose.jpg" />
+          <span class="profile__title">ROSÉ, Blackpink</span
+          ><span class="profile__subtitle">R&B, Hip-Hop</span>
         </div>
 
-
-        <div>
-            <div id="status-bar">
-                <i class="fas fa-arrow-left"></i><i class="fas fa-ellipsis-v"></i>
-            </div>
+        <div class="buttons">
+          <div class="buttons__shuffle">Shuffle</div>
+          <div class="buttons__like">
+            <i class="fas fa-heart"></i> <span>50m</span>
+          </div>
         </div>
+
+        <ul class="song-list">
+          <li>
+            <div>
+              <img class="song__img" src="img/rose.jpg" />
+              <div class="song__titles">
+                <span class="profile__subtitle">ROSÉ, Blackpink</span
+                ><span class="song-titles__title">Gone</span>
+              </div>
+              <div class="song__elipses"><i class="fas fa-ellipsis-v"></i></div>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img class="song__img" src="img/rose.jpg" />
+              <div class="song__titles">
+                <span class="profile__subtitle">ROSÉ, Blackpink</span
+                ><span class="song-titles__title">On The Ground</span>
+              </div>
+              <div class="song__elipses"><i class="fas fa-ellipsis-v"></i></div>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img class="song__img" src="img/rose.jpg" />
+              <div class="song__titles">
+                <span class="profile__subtitle">Blackpink</span
+                ><span class="song-titles__title">Pretty Savage</span>
+              </div>
+              <div class="song__elipses"><i class="fas fa-ellipsis-v"></i></div>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img class="song__img" src="img/rose.jpg" />
+              <div class="song__titles">
+                <span class="profile__subtitle">Blackpink</span
+                ><span class="song-titles__title">Lovesick Girls</span>
+              </div>
+              <div class="song__elipses"><i class="fas fa-ellipsis-v"></i></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <div id="status-bar">
+          <i class="fas fa-arrow-left"></i><i class="fas fa-ellipsis-v"></i>
+        </div>
+      </div>
     </div>
 
-    <script src="https://kit.fontawesome.com/88b22143f2.js" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/88b22143f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

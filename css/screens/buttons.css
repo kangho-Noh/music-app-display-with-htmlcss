@@ -1,0 +1,30 @@
+.buttons {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+.buttons__shuffle {
+  margin-left: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+}
+.buttons__like {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 75px;
+  height: 30px;
+  border-radius: 20px;
+  margin-left: 23px;
+}
+.buttons__like i {
+  margin-right: 5px;
+}
