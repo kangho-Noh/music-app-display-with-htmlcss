@@ -5,8 +5,8 @@
   align-items: center;
 }
 .profile img {
-  height: 60px;
-  width: 60px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
   box-shadow: 1px 1px 7px cornflowerblue;
   margin-bottom: 20px;
@@ -19,7 +19,7 @@
   font-weight: 800;
 }
 .profile__subtitle {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgb(87, 83, 83);
   font-size: 10px;
   font-weight: 600;
 }

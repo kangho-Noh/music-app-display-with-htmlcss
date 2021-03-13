@@ -6,7 +6,11 @@
   height: 20px;
   display: flex;
 }
+#status-bar i:first-child {
+  position: absolute;
+  left: 20px;
+}
 #status-bar i:last-child {
   position: absolute;
-  right: 30px;
+  right: 20px;
 }
