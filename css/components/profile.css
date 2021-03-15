@@ -5,10 +5,10 @@
   align-items: center;
 }
 .profile img {
-  width: 55px;
-  height: 55px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
-  box-shadow: 1px 1px 7px cornflowerblue;
+  box-shadow: 1px 2px 6px rgba(100, 149, 237, 0.5);
   margin-bottom: 20px;
 }
 .profile span {
