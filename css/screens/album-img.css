@@ -1,0 +1,10 @@
+.album-img-big {
+  margin: 20px 0px;
+  margin-bottom: 40px;
+}
+.album-img-big img {
+  height: 170px;
+  width: 170px;
+  border-radius: 20px;
+  box-shadow: 0px 12px 10px plum;
+}
