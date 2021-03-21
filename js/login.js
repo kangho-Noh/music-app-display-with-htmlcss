@@ -2,7 +2,10 @@ const loginForm = document.querySelector(".js-login-form"),
 loginID = loginForm.querySelector(".js-login__id"),
 loginPW = loginForm.querySelector(".js-login__pw");
 
-function submitHandler(event){
+const signUpBtn = document.querySelector(".js-signup-btn"),
+    signUpBox = document.querySelector(".js-signup-box");
+
+function submitHandler(){
     const inputID = loginID.value;
     const inputPW = loginPW.value;
     const userList = localStorage.getItem("IDPW");
@@ -31,9 +34,12 @@ function submitHandler(event){
         }
     }
 }
-
+function clickHandler(){
+    signUpBox.classList.remove("hiding");
+}
 function init(){
     loginForm.addEventListener("submit", submitHandler);
+    signUpBtn.addEventListener("click", clickHandler);
 }
 
 init();

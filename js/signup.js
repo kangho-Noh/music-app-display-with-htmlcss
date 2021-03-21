@@ -3,6 +3,8 @@ const signupForm  = document.querySelector(".js-signup-form"),
  signupPw = signupForm.querySelector(".js-signup__pw"),
  signupBtn = signupForm.querySelector("button");
 
+const cancelBtn = document.querySelector(".js-cancel-btn");
+
 let users = []
 
 function checkExistId(id){
@@ -43,7 +45,7 @@ function saveUserList(IDPW){
     alert("회원가입 완료!");
     users.push(IDPW);
     localStorage.setItem("IDPW", JSON.stringify(users));
-
+    hideSignUp();
 }
 function loadUsers(){
     
@@ -55,8 +57,15 @@ function loadUsers(){
     }
 }
 
+function hideSignUp(){
+    signupId.value = "";
+    signupPw.value = "";
+    signUpBox.classList.add("hiding");
+}
+
 function init(){
     loadUsers();
     signupBtn.addEventListener("click", clickHandler);
+    cancelBtn.addEventListener("click", hideSignUp);
 }
 init();
