@@ -5,146 +5,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>music app player</title>
+    <title>music app login</title>
   </head>
   <body>
-    <div class="two-sections">
-      <div>
-        <div id="status-bar">
-          <i class="fas fa-arrow-left"></i><i class="fas fa-search"></i>
-        </div>
-        <div class="profile">
-          <img src="img/roseprofile.jpg" />
-          <span class="profile__title">ROSÉ, Blackpink</span
-          ><span class="profile__subtitle">R&B, Hip-Hop</span>
-        </div>
-
-        <div class="buttons">
-          <div class="buttons__shuffle">Shuffle</div>
-          <div class="buttons__like">
-            <i class="fas fa-heart"></i> <span>50m</span>
-          </div>
-        </div>
-
-        <ul class="song-list">
-          <li>
-            <div>
-              <img class="song__img" src="img/rose.jpg" />
-              <div class="song-playing">
-                <div class="loading-bar"></div>
-                <div class="loading-bar"></div>
-                <div class="loading-bar"></div>
-              </div>
-              <div class="song__titles">
-                <span class="profile__subtitle js-singerName">ROSÉ</span
-                ><span class="song-titles__title js-songTitle">Gone</span>
-              </div>
-              <div class="song__elipses"><i class="fas fa-ellipsis-v"></i></div>
-            </div>
-          </li>
-          <li>
-            <div>
-              <img class="song__img" src="img/rose.jpg" />
-              <div class="song-playing hiding">
-                <div class="loading-bar"></div>
-                <div class="loading-bar"></div>
-                <div class="loading-bar"></div>
-              </div>
-              <div class="song__titles">
-                <span class="profile__subtitle js-singerName">ROSÉ</span
-                ><span class="song-titles__title js-songTitle"
-                  >On The Ground</span
-                >
-              </div>
-              <div class="song__elipses"><i class="fas fa-ellipsis-v"></i></div>
-            </div>
-          </li>
-          <li>
-            <div>
-              <img class="song__img" src="img/thealbum.jpg" />
-              <div class="song-playing hiding">
-                <div class="loading-bar"></div>
-                <div class="loading-bar"></div>
-                <div class="loading-bar"></div>
-              </div>
-              <div class="song__titles">
-                <span class="profile__subtitle js-singerName">Blackpink</span
-                ><span class="song-titles__title js-songTitle"
-                  >Pretty Savage</span
-                >
-              </div>
-              <div class="song__elipses"><i class="fas fa-ellipsis-v"></i></div>
-            </div>
-          </li>
-          <li>
-            <div>
-              <img class="song__img" src="img/thealbum.jpg" />
-              <div class="song-playing hiding">
-                <div class="loading-bar"></div>
-                <div class="loading-bar"></div>
-                <div class="loading-bar"></div>
-              </div>
-              <div class="song__titles">
-                <span class="profile__subtitle js-singerName">Blackpink</span
-                ><span class="song-titles__title js-songTitle"
-                  >Lovesick Girls</span
-                >
-              </div>
-              <div class="song__elipses"><i class="fas fa-ellipsis-v"></i></div>
-            </div>
-          </li>
-        </ul>
-
-        <div class="nowplaying-bar">
-          <div class="nowplaying-titles">
-            <span class="profile__subtitle js-singerName">ROSÉ</span
-            ><span class="song-titles__title title-white js-songTitle"
-              >Gone</span
-            >
-          </div>
-          <div class="nowplaying__btn">
-            <i class="fas fa-step-backward"></i>
-            <i class="fas fa-pause"></i>
-            <i class="fas fa-step-forward"></i>
-          </div>
-        </div>
-      </div>
-
+    <div class="two-sections kr-font">
       <div>
         <div id="status-bar">
           <i class="fas fa-arrow-left"></i><i class="fas fa-ellipsis-v"></i>
         </div>
-        <div class="album-img-big">
-          <img class="js-albumImage" src="img/rose.jpg" />
-        </div>
-        <div class="profile">
-          <span class="profile__title js-playerTitle">Gone</span>
-          <span class="profile__subtitle js-playerSubtitle">ROSÉ</span>
+        <div class="login-title">
+          <span>로그인</span>
         </div>
 
-        <div class="range-bar-box">
-          <div class="range-bar-minutes">
-            <span>0:00</span><span>4:00</span>
-          </div>
+        <form class="login__form js-login-form" action="#">
+          <input class="js-login__id" required type="text" placeholder="ID" />
           <input
-            class="range-bar"
-            type="range"
-            min="0"
-            max="100"
-            value="0"
-            step="1"
+            class="js-login__pw"
+            required
+            type="password"
+            placeholder="PASSWORD"
           />
-        </div>
+          <button>로그인</button>
+        </form>
+        <button class="last-btn js-signup-btn">회원가입</button>
+      </div>
 
-        <div class="player-buttons-box">
-          <i class="fas fa-redo fa-xs"></i>
-          <i class="fas fa-step-backward"></i>
-          <div class="player__playbutton">
-            <i class="fas fa-pause fa-lg"></i>
-          </div>
-          <i class="fas fa-step-forward"></i>
-          <i class="fas fa-random fa-xs"></i>
+      <div class="js-signup-box hiding">
+        <div id="status-bar">
+          <i class="fas fa-arrow-left"></i><i class="fas fa-ellipsis-v"></i>
         </div>
+        <div class="login-title">
+          <span>회원가입</span>
+        </div>
+        <form class="login__form js-signup-form" action="#">
+          <input class="js-signup__id" required type="text" placeholder="ID" />
+          <input
+            class="js-signup__pw"
+            required
+            type="password"
+            placeholder="PASSWORD"
+          />
+          <button>가입하기</button>
+        </form>
+        <button class="last-btn js-cancel-btn">취소</button>
       </div>
     </div>
 
@@ -152,6 +55,7 @@
       src="https://kit.fontawesome.com/88b22143f2.js"
       crossorigin="anonymous"
     ></script>
-    <script src="js/changesong.js"></script>
+    <script src="js/signup.js"></script>
+    <script src="js/login.js"></script>
   </body>
 </html>
