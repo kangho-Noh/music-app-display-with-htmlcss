@@ -23,3 +23,8 @@
   color: grey;
   opacity: 50%;
 }
+
+.player-buttons-box i:hover,
+.player-buttons-box div {
+  cursor: pointer;
+}

@@ -1,0 +1,15 @@
+audio {
+  font-size: 10px;
+  width: 90%;
+  margin-top: 30px;
+}
+audio::-webkit-media-controls-play-button {
+  display: none;
+}
+
+audio::-webkit-media-controls-current-time-display,
+video::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display,
+video::-webkit-media-controls-time-remaining-display {
+  font-size: 8.5px;
+}

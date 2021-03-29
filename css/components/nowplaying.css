@@ -24,4 +24,5 @@
 .nowplaying__btn i {
   margin-right: 10px;
   color: white;
+  cursor: pointer;
 }
