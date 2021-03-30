@@ -5,20 +5,20 @@ playerPlayPauseButton = playerPlayPauseButtonBox.querySelector(".play_pause");
 const nowPlayingButtons = document.querySelector(".nowplaying__btn"),
 playingbarPlayPauseButton=nowPlayingButtons.querySelector(".play_pause");
 
+function toggleIcons(){
+    playingbarPlayPauseButton.classList.toggle("fa-pause");
+    playingbarPlayPauseButton.classList.toggle("fa-play");
+    playerPlayPauseButton.classList.toggle("fa-pause");
+    playerPlayPauseButton.classList.toggle("fa-play");
+}
 function toggleMusicStatus(){
     if(nowSongAudio.paused){
         nowSongAudio.play();
-        playingbarPlayPauseButton.classList.toggle("fa-pause");
-        playingbarPlayPauseButton.classList.toggle("fa-play");
-        playerPlayPauseButton.classList.toggle("fa-pause");
-        playerPlayPauseButton.classList.toggle("fa-play");
+        toggleIcons();
     }
     else{
         nowSongAudio.pause();
-        playingbarPlayPauseButton.classList.toggle("fa-pause");
-        playingbarPlayPauseButton.classList.toggle("fa-play");
-        playerPlayPauseButton.classList.toggle("fa-pause");
-        playerPlayPauseButton.classList.toggle("fa-play");
+        toggleIcons();
     }
 }
 

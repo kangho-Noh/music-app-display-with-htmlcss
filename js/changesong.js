@@ -25,10 +25,7 @@ function changeSong(songTitle){
   nowSongAudio.load();
   nowSongAudio.play();
   if(playerPlayPauseButton.classList.contains("fa-play")){
-    playingbarPlayPauseButton.classList.toggle("fa-pause");
-    playingbarPlayPauseButton.classList.toggle("fa-play");
-    playerPlayPauseButton.classList.toggle("fa-pause");
-    playerPlayPauseButton.classList.toggle("fa-play");
+    toggleIcons();
   }
 }
 function changePlayerScreen(target) {
